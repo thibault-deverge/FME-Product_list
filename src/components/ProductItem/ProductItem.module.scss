@@ -1,0 +1,28 @@
+@use "../../styles/abstracts/variables" as var;
+
+.product {
+	& p:first-child {
+		color: var.$color-rose-500;
+		font-size: var.$fs-extra-small;
+	}
+
+	& h2 {
+		font-size: var.$fs-small;
+		font-weight: var.$fw-semi-bold;
+	}
+
+	& p:last-child {
+		color: var.$color-red;
+		font-size: var.$fs-small;
+		font-weight: var.$fw-semi-bold;
+	}
+}
+
+.imageContainer {
+	position: relative;
+	margin-bottom: 38px;
+}
+
+:global(.active) {
+	border: 2px solid var.$color-red;
+}
