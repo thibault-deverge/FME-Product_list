@@ -1,6 +1,6 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import styles from './CardButton.module.scss';
-import { IProducts } from '../../types/ProductType';
+import { IProducts } from '../../types/ProductTypes';
 import { useProducts } from '../../contexts/ProductContext';
 import { DecreaseIcon, IncreaseIcon } from '../../assets/icons';
 

@@ -1,8 +1,8 @@
 import React from 'react';
-import { IProducts } from '../../types/ProductType';
+import { IProducts } from '../../types/ProductTypes';
 import { DeleteItemIcon } from '../../assets/icons';
-import styles from './ShoppingCartItem.module.scss';
 import { useProducts } from '../../contexts/ProductContext';
+import styles from './ShoppingCartItem.module.scss';
 
 type Prop = {
 	product: IProducts;

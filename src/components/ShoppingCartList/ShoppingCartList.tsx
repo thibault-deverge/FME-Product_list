@@ -1,6 +1,5 @@
 import React from 'react';
-import { IProducts } from '../../types/ProductType';
-
+import { IProducts } from '../../types/ProductTypes';
 import ShoppingCartItem from '../ShoppingCartItem/ShoppingCartItem';
 import styles from './ShoppingCartList.module.scss';
 

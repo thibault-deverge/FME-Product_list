@@ -1,7 +1,7 @@
-import React from "react";
-import { IProducts } from "../../types/ProductType";
-import styles from "./ProductItem.module.scss";
-import CardButton from "../CardButton/CardButton";
+import React from 'react';
+import { IProducts } from '../../types/ProductTypes';
+import CardButton from '../CardButton/CardButton';
+import styles from './ProductItem.module.scss';
 
 type Prop = {
 	product: IProducts;
@@ -12,13 +12,13 @@ function ProductItem({ product }: Prop) {
 
 	return (
 		<article className={styles.product}>
-			<div className={`${styles.imageContainer} ${quantity ? "active" : ""}`}>
+			<div className={`${styles.imageContainer} ${quantity ? 'active' : ''}`}>
 				<picture>
 					<source srcSet={image.desktop} media="(min-width: 1000px)" />
 					<source srcSet={image.tablet} media="(min-width: 600px)" />
 					<img src={image.mobile} alt={name} />
 				</picture>
-				
+
 				<CardButton product={product} />
 			</div>
 

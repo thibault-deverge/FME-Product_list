@@ -1,11 +1,10 @@
 import React, { useEffect } from 'react';
-import { IProducts } from '../../types/ProductType';
-
+import { IProducts } from '../../types/ProductTypes';
+import { useProducts } from '../../contexts/ProductContext';
 import { OrderConfirmedIcon } from '../../assets/icons';
 import ConfirmButton from '../ConfirmButton/ConfirmButton';
 import ShoppingCartList from '../ShoppingCartList/ShoppingCartList';
 import styles from './ConfirmModal.module.scss';
-import { useProducts } from '../../contexts/ProductContext';
 
 type Props = {
 	cartProducts: IProducts[];

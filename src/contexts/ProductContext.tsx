@@ -1,12 +1,16 @@
 import React, { createContext, useContext, useState, ReactNode } from 'react';
 import { nanoid } from 'nanoid';
 
-import { TProductContext } from '../types/ProductType';
+import { TProductContext } from '../types/ProductTypes';
 import initialProducts from '../data/data';
 
 const ProductContext = createContext<TProductContext | null>(null);
 
-export function ProductProvider({ children }: { children: ReactNode }) {
+interface ProductProviderProps {
+	children: ReactNode;
+}
+
+export function ProductProvider({ children }: ProductProviderProps) {
 	const [products, setProducts] = useState(
 		initialProducts.map((product) => {
 			return {
@@ -51,7 +55,7 @@ export function ProductProvider({ children }: { children: ReactNode }) {
 export function useProducts() {
 	const context = useContext(ProductContext);
 	if (!context) {
-		throw new Error('useProduct must be used within a ProductProvider');
+		throw new Error('useProducts must be used within a ProductProvider');
 	}
 	return context;
 }
