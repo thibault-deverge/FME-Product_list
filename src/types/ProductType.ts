@@ -17,4 +17,5 @@ export type TProductContext = {
 	setProducts: React.Dispatch<React.SetStateAction<IProducts[]>>;
 	increaseQuantity: (id: string) => void;
 	decreaseQuantity: (id: string) => void;
+	resetQuantities: () => void;
 };

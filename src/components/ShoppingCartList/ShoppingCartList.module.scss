@@ -15,11 +15,3 @@
 		font-weight: var.$fw-bold;
 	}
 }
-
-.carbonNeutral {
-	@include mixins.flexCenter;
-	gap: var.$spacing-100;
-	background-color: var.$color-rose-50;
-	padding: var.$spacing-200;
-	border-radius: 12px;
-}

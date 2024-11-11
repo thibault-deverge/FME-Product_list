@@ -1,0 +1,14 @@
+@use '../../styles/abstracts/variables' as var;
+@use '../../styles/abstracts/mixins' as mixins;
+
+.carbonNeutral {
+	@include mixins.flexCenter;
+	gap: var.$spacing-100;
+	background-color: var.$color-rose-50;
+	padding: var.$spacing-200;
+	border-radius: 12px;
+
+	& span {
+		font-weight: var.$fw-semi-bold;
+	}
+}

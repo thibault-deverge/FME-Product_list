@@ -35,8 +35,14 @@ export function ProductProvider({ children }: { children: ReactNode }) {
 		);
 	};
 
+	const resetQuantities = () => {
+		setProducts((prevProducts) => prevProducts.map((product) => ({ ...product, quantity: 0 })));
+	};
+
 	return (
-		<ProductContext.Provider value={{ products, setProducts, increaseQuantity, decreaseQuantity }}>
+		<ProductContext.Provider
+			value={{ products, setProducts, increaseQuantity, decreaseQuantity, resetQuantities }}
+		>
 			{children}
 		</ProductContext.Provider>
 	);

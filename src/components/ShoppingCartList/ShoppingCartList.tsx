@@ -1,8 +1,6 @@
 import React from 'react';
 import { IProducts } from '../../types/ProductType';
-import { CarbonNeutralIcon } from '../../assets/icons';
 
-import ConfirmButton from '../ConfirmButton/ConfirmButton';
 import ShoppingCartItem from '../ShoppingCartItem/ShoppingCartItem';
 import styles from './ShoppingCartList.module.scss';
 
@@ -29,13 +27,6 @@ function ShoppingCartList({ cartProducts }: Prop) {
 				<p>Order Total</p>
 				<p>${totalPrice.toFixed(2)}</p>
 			</div>
-			<div className={styles.carbonNeutral}>
-				<CarbonNeutralIcon />
-				<p>
-					This is a <span>carbon-neutral</span> delivery
-				</p>
-			</div>
-			<ConfirmButton>Confirm order</ConfirmButton>
 		</>
 	);
 }

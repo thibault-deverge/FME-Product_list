@@ -3,10 +3,15 @@ import styles from './ConfirmButton.module.scss';
 
 type Prop = {
 	children: React.ReactNode;
+	handleClick: () => void;
 };
 
-function ConfirmButton({ children }: Prop) {
-	return <button className={styles.confirmButton}>{children}</button>;
+function ConfirmButton({ children, handleClick }: Prop) {
+	return (
+		<button onClick={handleClick} className={styles.confirmButton}>
+			{children}
+		</button>
+	);
 }
 
 export default ConfirmButton;
