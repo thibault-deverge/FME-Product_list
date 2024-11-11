@@ -1,11 +1,11 @@
-import React, { useEffect } from "react";
-import styles from "./CardButton.module.scss";
-import { IProducts } from "../../types/ProductType";
-import { useProduct } from "../../contexts/ProductContext";
-import { DecreaseIcon, IncreaseIcon } from "../../assets/icons";
+import React, { useEffect } from 'react';
+import styles from './CardButton.module.scss';
+import { IProducts } from '../../types/ProductType';
+import { useProducts } from '../../contexts/ProductContext';
+import { DecreaseIcon, IncreaseIcon } from '../../assets/icons';
 
 function CardButton({ product }: { product: IProducts }) {
-	const { increaseQuantity, decreaseQuantity } = useProduct();
+	const { increaseQuantity, decreaseQuantity } = useProducts();
 	const { id, quantity } = product;
 
 	if (!quantity) {
@@ -23,7 +23,7 @@ function CardButton({ product }: { product: IProducts }) {
 				role="button"
 				tabIndex={0}
 				onClick={() => decreaseQuantity(id)}
-				onKeyDown={(e) => e.key === "Enter" && decreaseQuantity(id)}
+				onKeyDown={(e) => e.key === 'Enter' && decreaseQuantity(id)}
 			>
 				<DecreaseIcon />
 			</div>
@@ -33,7 +33,7 @@ function CardButton({ product }: { product: IProducts }) {
 				tabIndex={0}
 				onClick={() => increaseQuantity(id)}
 				onKeyDown={(e) => {
-					e.key === "Enter" && increaseQuantity(id);
+					e.key === 'Enter' && increaseQuantity(id);
 				}}
 			>
 				<IncreaseIcon />

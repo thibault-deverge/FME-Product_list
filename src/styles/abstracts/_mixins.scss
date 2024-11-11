@@ -1,0 +1,27 @@
+@use './variables' as var;
+
+@mixin buttonBase($bg-color, $text-color) {
+	position: absolute;
+	width: var.$size-btn-addcart;
+	left: 50%;
+	bottom: -22px;
+	transform: translateX(-50%);
+	font-size: var.$fs-extra-small;
+	font-weight: var.$fw-semi-bold;
+	padding: var.$spacing-150;
+	border-radius: 999px;
+	background-color: $bg-color;
+	color: $text-color;
+}
+
+@mixin flexCenter {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+@mixin flexSpaceBetween {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}

@@ -1,0 +1,44 @@
+@use '../../styles/abstracts/variables' as var;
+
+.cartItem {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	& div {
+		display: flex;
+		flex-direction: column;
+		gap: var.$spacing-100;
+	}
+
+	& h3 {
+		font-size: var.$fs-extra-small;
+		font-weight: var.$fw-semi-bold;
+	}
+
+	& p {
+		color: var.$color-rose-500;
+		font-size: var.$fs-extra-small;
+		font-weight: var.$fw-semi-bold;
+
+		display: flex;
+		gap: var.$spacing-100;
+
+		& span:nth-child(1) {
+			color: var.$color-red;
+		}
+
+		& span:nth-child(2) {
+			font-weight: var.$fw-regular;
+		}
+	}
+
+	button {
+		background-color: transparent;
+		width: 20px;
+		height: 20px;
+		border: 1px solid var.$color-rose-400;
+		border-radius: 50%;
+		cursor: pointer;
+	}
+}

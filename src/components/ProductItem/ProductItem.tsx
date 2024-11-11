@@ -18,8 +18,10 @@ function ProductItem({ product }: Prop) {
 					<source srcSet={image.tablet} media="(min-width: 600px)" />
 					<img src={image.mobile} alt={name} />
 				</picture>
+				
 				<CardButton product={product} />
 			</div>
+
 			<p className={styles.category}>{category}</p>
 			<h2>{name}</h2>
 			<p>${price.toFixed(2)}</p>

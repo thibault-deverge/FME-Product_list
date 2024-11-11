@@ -1,8 +1,8 @@
-import React, { createContext, useContext, useState, ReactNode } from "react";
-import { nanoid } from "nanoid";
+import React, { createContext, useContext, useState, ReactNode } from 'react';
+import { nanoid } from 'nanoid';
 
-import { TProductContext } from "../types/ProductType";
-import initialProducts from "../data/data";
+import { TProductContext } from '../types/ProductType';
+import initialProducts from '../data/data';
 
 const ProductContext = createContext<TProductContext | null>(null);
 
@@ -36,18 +36,16 @@ export function ProductProvider({ children }: { children: ReactNode }) {
 	};
 
 	return (
-		<ProductContext.Provider
-			value={{ products, setProducts, increaseQuantity, decreaseQuantity }}
-		>
+		<ProductContext.Provider value={{ products, setProducts, increaseQuantity, decreaseQuantity }}>
 			{children}
 		</ProductContext.Provider>
 	);
 }
 
-export function useProduct() {
+export function useProducts() {
 	const context = useContext(ProductContext);
 	if (!context) {
-		throw new Error("useProduct must be used within a ProductProvider");
+		throw new Error('useProduct must be used within a ProductProvider');
 	}
 	return context;
 }

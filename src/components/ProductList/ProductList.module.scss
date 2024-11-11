@@ -1,7 +1,15 @@
-@use "../../styles/abstracts/variables" as var;
+@use '../../styles/abstracts/variables' as var;
+
+.dessertContainer {
+	flex-grow: 1;
+}
 
 .productsList {
 	display: grid;
-	grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+	grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
 	gap: var.$spacing-300;
+
+	@media screen and (min-width: var.$breakpoint-desktop) {
+		grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+	}
 }

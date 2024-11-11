@@ -1,4 +1,4 @@
-@use "../../styles/abstracts/variables" as var;
+@use '../../styles/abstracts/variables' as var;
 
 .product {
 	& p:first-child {
@@ -20,7 +20,7 @@
 
 .imageContainer {
 	position: relative;
-	margin-bottom: 38px;
+	margin-bottom: var.$spacing-500;
 }
 
 :global(.active) {

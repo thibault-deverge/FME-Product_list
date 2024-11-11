@@ -11,7 +11,7 @@ $color-black: #000;
 $color-white: #fff;
 
 // Typography
-$font-primary: "Red Hat", sans-serif;
+$font-primary: 'Red Hat', sans-serif;
 $fw-regular: 400;
 $fw-semi-bold: 600;
 $fw-bold: 700;
@@ -35,3 +35,9 @@ $spacing-300: 1.5rem;
 $spacing-400: 2rem;
 $spacing-500: 2.5rem;
 $spacing-1100: 5.5rem;
+
+// Size
+$size-btn-addcart: 10rem;
+
+// Breakpoint
+$breakpoint-desktop: 81.25rem;

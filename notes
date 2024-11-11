@@ -1,0 +1,18 @@
+Step 2 :
+
+- Creer component pour carbone empreinte
+- Creer Component pour le bouton de confirmation
+- make feature to delete product (via decreaseProduct)
+
+Step 3 :
+
+- Make ProductList et ShoppingCard responsive
+
+Step 4:
+
+- Creer confirmation modal et gerer son display responsive
+
+DEBUG :
+
+- Voir pour le coup du button et de la div pour styliser svg et essayer de fix ce machin et comprendre pourquoi
+- Sort le shopping cart par ordre alphabetique
