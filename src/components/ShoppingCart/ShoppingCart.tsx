@@ -21,7 +21,7 @@ function ShoppingCart() {
 
 			{cartProducts.length === 0 ? (
 				<div className={styles.emptyCart}>
-					<img src="/public/assets/images/illustration-empty-cart.svg" alt="" />
+					<img src="/assets/images/illustration-empty-cart.svg" alt="" />
 					<p>You added items will appear here</p>
 				</div>
 			) : (

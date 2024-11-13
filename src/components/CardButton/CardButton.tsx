@@ -11,7 +11,7 @@ function CardButton({ product }: { product: IProducts }) {
 	if (!quantity) {
 		return (
 			<button className={styles.addButton} onClick={() => increaseQuantity(id)}>
-				<img src="/public/assets/images/icon-add-to-cart.svg" alt="" />
+				<img src="/assets/images/icon-add-to-cart.svg" alt="" />
 				Add to Cart
 			</button>
 		);
