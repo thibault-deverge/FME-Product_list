@@ -29,7 +29,8 @@
 		}
 	}
 
-	@media screen and (min-width: var.$breakpoint-desktop) {
+	@media screen and (min-width: var.$breakpoint-tablet) {
 		max-height: fit-content;
+		min-width: 30%;
 	}
 }

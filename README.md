@@ -1,6 +1,6 @@
 # Frontend Mentor - Product list with cart solution
 
-This is a solution to the [Product list with cart challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/product-list-with-cart-5MmqLVAp_d). Live site can be see [here]()
+This is a solution to the [Product list with cart challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/product-list-with-cart-5MmqLVAp_d). Live site can be see [here](https://fme-product-list.vercel.app/)
 
 ### The challenge
 
@@ -19,8 +19,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Solution URL - FrontendMentor](https://your-solution-url.com)
-- Live Site URL: [Live Site URL](https://your-live-site-url.com)
+- Solution URL: [Solution URL - FrontendMentor](https://www.frontendmentor.io/solutions/product-list---solution-react---typescript---css-modules-ZwWE8hyNML)
+- Live Site URL: [Live Site URL](https://fme-product-list.vercel.app/)
 
 ### Built with
 
