@@ -1,4 +1,3 @@
-import React from 'react';
 import { CarbonNeutralIcon } from '../../assets/icons';
 import styles from './CarbonNeutral.module.scss';
 

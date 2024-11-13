@@ -1,4 +1,3 @@
-import React from 'react';
 import styles from './CardButton.module.scss';
 import { IProducts } from '../../types/ProductTypes';
 import { useProducts } from '../../contexts/ProductContext';

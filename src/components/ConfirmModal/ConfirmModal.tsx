@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import { useEffect } from 'react';
 import { IProducts } from '../../types/ProductTypes';
 import { useProducts } from '../../contexts/ProductContext';
 import { OrderConfirmedIcon } from '../../assets/icons';

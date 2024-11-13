@@ -1,4 +1,3 @@
-import React from 'react';
 import { useProducts } from '../../contexts/ProductContext';
 import ProductItem from '../ProductItem/ProductItem';
 import styles from './ProductList.module.scss';

@@ -1,4 +1,3 @@
-import React from 'react';
 import { IProducts } from '../../types/ProductTypes';
 import { DeleteItemIcon } from '../../assets/icons';
 import { useProducts } from '../../contexts/ProductContext';
